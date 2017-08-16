@@ -1,6 +1,4 @@
-# vc-module-marketo
-Marketo integration module (Preview!)
-# VirtoCommerce.Contentful (Preview!)
+# Marketo integration module (Preview!)
 VirtoCommerce.Marketo module provides integration with https://marketo.com Marketing Service.
 
 Key features:
