@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <id>VirtoCommerce.Marketo</id>
+    <version>1.0.0</version>
+    <platformVersion>2.13.9</platformVersion>
+
+    <title>Marketo Module (Preview)</title>
+    <description>Marketo integration module.</description>
+    <authors>
+        <author>Alexander Siniouguine</author>
+    </authors>
+
+    <assemblyFile>VirtoCommerce.Marketo.dll</assemblyFile>
+    <moduleType>VirtoCommerce.Marketo.Module, VirtoCommerce.Marketo</moduleType>
+
+    <settings>
+        <group name="General">
+            <setting>
+                <name>VirtoCommerce.Marketo.General.APIUrl</name>
+                <valueType>string</valueType>
+                <defaultValue>https://{site}.mktorest.com</defaultValue>
+                <title>Marketo REST API Url</title>
+                <description>refer to http://developers.marketo.com/documentation/rest/custom-service/</description>
+            </setting>
+            <setting>
+                <name>VirtoCommerce.Marketo.General.ClientId</name>
+                <valueType>secureString</valueType>
+                <defaultValue></defaultValue>
+                <title>Client ID</title>
+                <description>refer to http://developers.marketo.com/documentation/rest/custom-service/</description>
+            </setting>
+          <setting>
+            <name>VirtoCommerce.Marketo.General.ClientSecret</name>
+            <valueType>secureString</valueType>
+            <defaultValue></defaultValue>
+            <title>Client Secret</title>
+            <description>refer to http://developers.marketo.com/documentation/rest/custom-service/</description>
+          </setting>
+        </group>
+    </settings>
+</module>
