@@ -12,6 +12,9 @@ Installing the module:
 # Settings
 * Go to Marketo module settings and configure URL, Client Id and Client Secret. To get those values, consult the following guide.
 
+# Scenarios
+* Register new user on Virto Commerce storefront, then check marketo leads database. New lead should appear there.
+
 # License
 Copyright (c) Virtosoftware Ltd.  All rights reserved. 
 
