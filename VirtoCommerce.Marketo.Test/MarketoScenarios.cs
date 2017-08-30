@@ -8,6 +8,7 @@ namespace VirtoCommerce.Marketo.Test
     public class MarketoScenarios
     {
         [Fact]
+        [Trait("Category", "Unit")]
         public void Can_create_leads()
         {
             var serviceName = Environment.GetEnvironmentVariable("MarketoUrl");
