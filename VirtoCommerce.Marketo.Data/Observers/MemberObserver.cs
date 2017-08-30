@@ -58,7 +58,7 @@ namespace VirtoCommerce.Marketo.Data.Observers
 
                     using (var result = Service.CreateOrUpdateLeads(request).Result)
                     {
-
+                        // check for actual result success here
                     }
                 }
             }
