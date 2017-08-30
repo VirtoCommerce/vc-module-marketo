@@ -33,7 +33,7 @@ namespace VirtoCommerce.Marketo.Data.Services
             string url = String.Format("{0}/rest/v1/leads.json?access_token={1}", Connection.RestApiUrl, token);
             var fullUri = new Uri(url, UriKind.Absolute);
 
-            var leadCreateResponse = new LeadCreateResponse();
+            LeadCreateResponse leadCreateResponse;
             using (var client = new HttpClient())
             {
                 var response = await client.PostAsync(fullUri, request.AsJson()).ConfigureAwait(false);
@@ -49,7 +49,7 @@ namespace VirtoCommerce.Marketo.Data.Services
                     if (response.StatusCode == HttpStatusCode.Forbidden)
                         throw new AuthenticationException("Invalid username/password combination.");
                     else
-                        throw new ApplicationException("Not able to get token");
+                        throw new AuthenticationException("Not able to get token");
                 }
             }
 
@@ -61,7 +61,7 @@ namespace VirtoCommerce.Marketo.Data.Services
             string url = String.Format("{0}/identity/oauth/token?grant_type=client_credentials&client_id={1}&client_secret={2}", Connection.RestApiUrl, Connection.ClientId, Connection.ClientSecret);
             var fullUri = new Uri(url, UriKind.Absolute);
 
-            var tokenResponse = new TokenResponse();
+            TokenResponse tokenResponse;
             using (var client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(fullUri).ConfigureAwait(false);
@@ -77,7 +77,7 @@ namespace VirtoCommerce.Marketo.Data.Services
                     if (response.StatusCode == HttpStatusCode.Forbidden)
                         throw new AuthenticationException("Invalid username/password combination.");
                     else
-                        throw new ApplicationException("Not able to get token");
+                        throw new AuthenticationException("Not able to get token");
                 }
             }
 

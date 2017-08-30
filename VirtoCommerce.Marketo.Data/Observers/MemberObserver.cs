@@ -17,10 +17,12 @@ namespace VirtoCommerce.Marketo.Data.Observers
 
         public void OnCompleted()
         {
+            // Not required for this
         }
 
         public void OnError(Exception error)
         {
+            // Not implemented
         }
 
         public void OnNext(MemberChangingEvent value)
@@ -54,7 +56,10 @@ namespace VirtoCommerce.Marketo.Data.Observers
                         }
                     };
 
-                    var result = Service.CreateOrUpdateLeads(request).Result;
+                    using (var result = Service.CreateOrUpdateLeads(request).Result)
+                    {
+
+                    }
                 }
             }
         }

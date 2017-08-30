@@ -1,4 +1,6 @@
-﻿namespace VirtoCommerce.Marketo.Data.Models
+﻿using System;
+
+namespace VirtoCommerce.Marketo.Data.Models
 {
     public class PushLead
     {
@@ -41,11 +43,16 @@
         public PushLead[] input { get; set; }
     }
 
-    public class LeadCreateResponse
+    public class LeadCreateResponse : IDisposable
     {
         public string requestId { get; set; }
         public bool success { get; set; }
         public OpResult[] result { get; set; }
+
+        public void Dispose()
+        {
+            // Do nothing here
+        }
     }
 
     public class OpResult

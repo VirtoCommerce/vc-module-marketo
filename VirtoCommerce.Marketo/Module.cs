@@ -34,10 +34,5 @@ namespace VirtoCommerce.Marketo
             // This method is called for each installed module on the first stage of initialization.
             _container.RegisterType<IObserver<MemberChangingEvent>, MemberObserver>("MemberObserver");
         }
-
-        public override void PostInitialize()
-        {
-            base.PostInitialize();
-        }
     }
 }
