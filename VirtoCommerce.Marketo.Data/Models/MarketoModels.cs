@@ -2,17 +2,6 @@
 
 namespace VirtoCommerce.Marketo.Data.Models
 {
-    public class PushLead
-    {
-        public string email { get; set; }
-        public string country { get; set; }
-        public string firstName { get; set; }
-        public string website { get; set; }
-        public int leadScore { get; set; }
-        public string marketoSocialFacebookProfileURL { get; set; }
-        public string jobTitle { get; set; }
-    }
-
     public class Lead
     {
         public string email { get; set; }
@@ -32,15 +21,6 @@ namespace VirtoCommerce.Marketo.Data.Models
         public string action { get; set; }
         public string lookupField { get; set; }
         public Lead[] input { get; set; }
-    }
-
-    public class PushLeadsRequest
-    {
-        public string programName { get; set; }
-        public string source { get; set; }
-        public string reason { get; set; }
-        public string lookupField { get; set; }
-        public PushLead[] input { get; set; }
     }
 
     public class LeadCreateResponse : IDisposable
