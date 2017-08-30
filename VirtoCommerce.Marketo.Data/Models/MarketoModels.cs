@@ -51,7 +51,13 @@ namespace VirtoCommerce.Marketo.Data.Models
 
         public void Dispose()
         {
-            // Do nothing here
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            // Cleanup
         }
     }
 
