@@ -5,7 +5,7 @@
 VirtoCommerce.Marketo module provides integration with https://marketo.com Marketing Service.
 
 Key features:
-* Creates and updates leads when contacts are created in Virto Commerce
+* Creates and updates leads when contacts are created in Virto Commerce using API
 
 # Installation
 Installing the module:
