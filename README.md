@@ -1,3 +1,6 @@
+[![Build Status](http://ci.virtocommerce.com/buildStatus/icon?job=vc-2-org/vc-module-marketo/master)](http://ci.virtocommerce.com/job/vc-2-org/job/vc-module-marketo/job/master/)
+[![Join the chat at https://gitter.im/VirtoCommerce/vc-community](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/VirtoCommerce/vc-community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Marketo integration module (Preview!)
 VirtoCommerce.Marketo module provides integration with https://marketo.com Marketing Service.
 
